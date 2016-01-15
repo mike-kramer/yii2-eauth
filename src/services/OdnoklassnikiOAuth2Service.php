@@ -36,10 +36,10 @@ class OdnoklassnikiOAuth2Service extends Service
 	protected $scopes = [];
 	protected $scopeSeparator = ';';
 	protected $providerOptions = [
-        	'authorize'    => 'https://connect.ok.ru/oauth/authorize',
-        	'access_token' => 'https://api.odnoklassniki.ru/oauth/token.do',
-    	];
-    	protected $baseApiUrl = 'http://api.odnoklassniki.ru/fb.do';
+            'authorize'    => 'https://connect.ok.ru/oauth/authorize',
+            'access_token' => 'https://api.ok.ru/oauth/token.do',
+        ];
+        protected $baseApiUrl = 'https://api.ok.ru/api/';
 
 	protected $tokenDefaultLifetime = 1500; // about 25 minutes
 	protected $validateState = false;
